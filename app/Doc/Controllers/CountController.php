@@ -1,10 +1,4 @@
 <?php
-/**
- * User: bluey
- * Date: 2019/1/10
- * Time: 17:47
- */
-
 namespace App\Doc\Controllers;
 
 use App\Base\Controllers\Controller;

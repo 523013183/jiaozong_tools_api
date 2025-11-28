@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: luxf
- * Date: 2022/3/29
- * Time: 9:53 AM
- */
-
 namespace App\Base\Models;
 
 

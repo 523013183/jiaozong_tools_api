@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: fangx
- * Date: 2021/7/7
- * Time: 10:32
- */
-
 namespace App\Web\Providers;
 
 use App\Base\Providers\AppServiceProvider;

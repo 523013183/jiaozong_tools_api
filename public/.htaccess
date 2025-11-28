@@ -4,9 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-
-    RewriteRule ^static/(.*)$  /dist/static/$1  [NC,L]
-
+    
     RewriteRule ^/(cY95CwKkfB\.txt)$ $1 [QSA,PT,L]
 
     # Redirect Trailing Slashes If Not A Folder...
