@@ -24,8 +24,8 @@ $app->group([
     $app->get('/blog/front-list', ['uses' => 'BlogController@getFrontList']);
 
     // 返回考试日历列表
-    $app->get('/exams-list', ['uses' => 'BlogController@getFrontList']);
-    $app->get('/exam-info', ['uses' => 'BlogController@getFrontList']);
+    $app->get('/exam/list', ['uses' => 'ExamController@getList']);
+    $app->get('/exam/info', ['uses' => 'ExamController@getInfo']);
 });
 
 /**

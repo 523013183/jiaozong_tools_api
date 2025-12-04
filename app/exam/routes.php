@@ -6,11 +6,12 @@ $app = app()->router;
  * */
 $app->group([
     'namespace' => 'App\Api\Controllers',
-    'prefix' => 'api',
+    'prefix' => 'admin',
     'middleware' => ['auth'],
 ], function () use ($app) {
     // 考试事件
-    $app->post('/exams/info', ['uses' => 'BlogController@saveInfo']);
-    $app->get('/exams/info', ['uses' => 'BlogController@saveInfo']);
-    $app->delete('/exams/info', ['uses' => 'BlogController@deleteInfo']);
+    $app->post('/exams/info', ['uses' => 'ExamController@saveInfo']);
+    $app->get('/exams/info', ['uses' => 'ExamController@getInfo']);
+    $app->get('/exams/list', ['uses' => 'ExamController@getList']);
+    $app->delete('/exams/info', ['uses' => 'ExamController@deleteInfo']);
 });

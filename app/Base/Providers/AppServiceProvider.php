@@ -20,6 +20,7 @@ use App\Base\Models\ComOssETagModel;
 use App\Base\Services\DictLocationService;
 use App\Base\Services\ObsService;
 use App\Base\Services\UploadService;
+use App\Exam\Providers\ExamServiceProvider;
 use App\User\Providers\UserServiceProvider;
 use App\Web\Providers\WebServiceProvider;
 use Illuminate\Redis\RedisServiceProvider;
@@ -73,6 +74,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->register(UserServiceProvider::class);
         $this->app->register(AttachmentServiceProvider::class);
         $this->app->register(WebServiceProvider::class);
+        $this->app->register(ExamServiceProvider::class);
 
         $this->app->bind(ApiSysUserFacade::class, function () {
             return app()->make(ApiSysUserService::class);
