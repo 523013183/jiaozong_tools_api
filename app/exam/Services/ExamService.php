@@ -1,22 +1,17 @@
 <?php
 namespace App\Exam\Services;
 
-use App\Api\Facades\PageInfoFacade;
-use App\Api\Models\BlogCateModel;
-use App\Api\Models\BlogInfoModel;
-use App\Api\Models\PageInfoModel;
 use App\Base\Exceptions\ApiException;
 use App\Base\Services\ApiBaseService;
+use App\Exam\Models\ExamMainModel;
 
 class ExamService extends ApiBaseService
 {
     private $blogCateModel;
 
-    public function __construct(BlogInfoModel $model,
-        BlogCateModel $blogCateModel)
+    public function __construct(ExamMainModel $model)
     {
         $this->model = $model;
-        $this->blogCateModel = $blogCateModel;
     }
 
     /** 

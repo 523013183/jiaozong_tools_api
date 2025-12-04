@@ -1,5 +1,7 @@
 <?php
-
+/** 
+ * 单元测试命令：./vendor/bin/phpunit tests/ExampleTest.php --filter testLast  --dont-report-useless-tests
+ */
 abstract class TestCase extends Laravel\Lumen\Testing\TestCase
 {
     protected $token = '5da1beb37d511577b6fc3a9b67052344';
